@@ -42,12 +42,11 @@
 .banner__image {
     background: url("../img/banner.jpg") no-repeat center / cover;
     width: 100%;
-    height: calc(100vh - 72px);
 }
+
 .banner__title {
     color: #fdfdfd;
     font-family: Pacifico, cursive;
-    font-size: 5.0625rem;
     position: absolute;
     left: 50%;
     text-align: center;
@@ -60,14 +59,13 @@
 /*------------------about section----------------*/
 .about {
     text-align: center;
-    padding: 2.5rem;
+
 
 }
 
 .about__title {
     color: #8d0606;
     font-family: Pacifico, cursive;
-    font-size: 3.1875rem;
 }
 
 .about__description {
@@ -81,7 +79,6 @@
     background-color: #e5e5e5;
     display: flex;
     flex-wrap: wrap;
-    padding: 5rem 0 0 5rem;
 }
 
 .recipe {
@@ -193,4 +190,112 @@
     text-align: right;
     padding: 1.5625rem 5rem;
     text-transform: lowercase;
+}
+
+/*------------------responsive----------------*/
+
+
+@media screen and(min-width: 0) {
+    .logo {
+        display: none;
+    }
+
+    .banner__image {
+        height: calc(100vh - 51px);
+    }
+
+    .banner__title {
+        font-size: 3rem;
+    }
+
+    .about {
+        padding: 2.5rem 1rem;
+    }
+
+    .about__title {
+        font-size: 2rem;
+    }
+
+    .about__description {
+        font-size: 1.3rem;
+    }
+
+    .recipe {
+        margin-right: 1rem;
+        width: 100%;
+    }
+
+    .recipes {
+        padding: 5rem 0 0 1rem;
+    }
+
+    .person {
+        margin-bottom: 2rem;
+    }
+
+    .people {
+        flex-direction: column;
+    }
+}
+
+
+@media screen and(min-width: 768px) {
+    .header{
+        justify-content: space-between;
+        padding: 0 5rem;
+    }
+
+    .logo {
+        display: block;
+    }
+
+    .banner__image {
+        height: calc(100vh - 72px);
+    }
+
+    .banner__title {
+        font-size: 5.0625rem;
+    }
+
+    .about {
+        padding: 2.5rem;
+    }
+    
+    .about__title {
+        font-size: 3.1875rem;
+    }
+
+    .about__description {
+        font-size: 1.75rem;
+    }
+
+    .recipe {
+        margin-right: 2.5rem;
+        width: calc(33% - 2.5rem);
+    }
+
+    .recipes {
+        padding: 5rem 0 0 2.5rem;
+    }
+
+    .person {
+        margin-bottom: 0;
+    }
+
+    .people {
+        flex-direction: row;
+    }
+}
+
+
+@media screen and(min-width: 922px) {
+    .recipe {
+        margin-right: 5rem;
+        width: calc(25% - 5rem);
+    }
+
+    .recipes {
+        padding: 5rem 0 0 5rem;
+    }
+
 }
