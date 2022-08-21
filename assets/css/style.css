@@ -184,3 +184,13 @@
 .person__image--andrea {
     background-image: url("../img/personas/andrea.jpg");
 }
+
+/*------------------footer----------------*/
+
+.footer {
+    background-color: #bfbfbf;
+    color: #fdfdfd;
+    text-align: right;
+    padding: 1.5625rem 5rem;
+    text-transform: lowercase;
+}
