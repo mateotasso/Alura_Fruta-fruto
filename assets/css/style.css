@@ -91,7 +91,7 @@
 }
 
 .recipe__image {
-    height: 200px;
+    height: 150px;
 }
 
 .recipe__title {
@@ -225,6 +225,7 @@
         width: 100%;
     }
 
+
     .recipes {
         padding: 5rem 0 0 1rem;
     }
@@ -278,12 +279,16 @@
         padding: 5rem 0 0 2.5rem;
     }
 
+    .recipe__image {
+        height: 150px;
+    }
+
     .person {
         margin-bottom: 0;
     }
 
     .people {
-        flex-direction: column;
+        flex-direction: row;
     }
 }
 
@@ -296,6 +301,10 @@
 
     .recipes {
         padding: 5rem 0 0 5rem;
+    }
+        
+    .recipe__image {
+        height: 150px;
     }
 
 }
