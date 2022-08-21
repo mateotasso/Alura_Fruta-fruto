@@ -40,6 +40,7 @@
 /*------------------banner section----------------*/
 
 .banner__image {
+    background: url("../img/banner.jpg") no-repeat center / cover;
     width: 100%;
     height: calc(100vh - 72px);
 }
@@ -116,4 +117,70 @@
     border-radius: 5px;
     color: #fdfdfd;
     padding: 1rem;
+}
+
+/*------------------who we are section----------------*/
+.who-we-are__title {
+    margin-bottom: 1rem;
+    color: #8d0606;
+    font-size: 3.1875rem;
+    font-family: Pacifico, cursive;
+}
+
+.who-we-are {
+    text-align: center;
+    padding: 5rem;
+}
+.who-we-are__description {
+    font-weight: 100;
+    font-size: 1.75rem;
+    color: #595959;
+}
+
+/*------------------people----------------*/
+
+.person {
+    flex-direction: column;
+    display: flex;
+    
+}
+
+.person__name {
+    color: #8d0606;
+    font-family: Pacifico, cursive;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.person__function {
+    color: #595959;
+    font-size: 1.25rem;
+    text-transform: lowercase;
+}
+
+.people {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3rem;
+}
+
+.person__image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    height: 300px;
+    width: 300px;
+}
+
+.person__image--roberta {
+    background-image: url("../img/personas/roberta.jpg");
+}
+
+.person__image--marcela {
+    background-image: url("../img/personas/marcela.jpg");
+}
+
+.person__image--andrea {
+    background-image: url("../img/personas/andrea.jpg");
 }
